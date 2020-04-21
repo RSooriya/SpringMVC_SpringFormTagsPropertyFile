@@ -18,6 +18,7 @@
 	<context:component-scan base-package="com.pack.sooriya" />
 	<util:properties id="departmentOptions" location="classpath:../department.properties"/>
     <util:properties id="genderOptions" location="classpath:../gender.properties"/>
+    <util:properties id="skillOptions" location="classpath:../skills.properties"/>
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
 

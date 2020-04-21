@@ -15,12 +15,15 @@ public class FormController {
 	private Map<String,String> departmentOptions;
 	@Value("#{genderOptions}")
 	private Map<String,String> genderOptions;
+	@Value("#{skillOptions}")
+	private Map<String,String> skillOptions;
 
 	@RequestMapping("/showForm")
 	public String showForm(Model model)
 	{
 		model.addAttribute("departmentOptions", departmentOptions);
 		model.addAttribute("genderOptions",genderOptions);
+		model.addAttribute("skillOptions",skillOptions);
 		model.addAttribute("student", new Student());
 		return "showForm";
 	}

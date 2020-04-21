@@ -9,7 +9,6 @@
 <style>
 table
 {
-width:20%;
 border-spacing:10px;
 }
 </style>
@@ -30,6 +29,10 @@ border-spacing:10px;
 <tr>
 <td>Gender</td>
 <td><form:radiobuttons path="gender" items="${genderOptions }"/></td>
+</tr>
+<tr>
+<td>Skills</td>
+<td><form:checkboxes path="skills" items="${skillOptions }"/></td>
 </tr>
 <tr>
 <td><input type="submit" value="Submit"></td>
