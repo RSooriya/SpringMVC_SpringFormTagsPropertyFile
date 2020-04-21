@@ -20,6 +20,10 @@ text-align:left;
 <th>Department</th>
 <td>${student.dept }</td>
 </tr>
+<tr>
+<th>Gender</th>
+<td>${student.gender }</td>
+</tr>
 </table>
 </body>
 </html>
